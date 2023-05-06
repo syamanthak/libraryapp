@@ -1,0 +1,10 @@
+.row{
+    width: 450px;
+    background-color: #356a76;
+}
+
+.card{
+    width: 78%;
+    margin: 10%;
+    padding: 32px;
+}

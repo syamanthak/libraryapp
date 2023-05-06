@@ -1,0 +1,70 @@
+<!-- <div class="container">
+    <div class="p-5 logbox">
+        <form  [formGroup]="data" (ngSubmit)="signupfunction(data)">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Name</label>
+              <input type="text"class="form-control form-control-lg bg-dark text-white" formControlName="name">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input type="text" class="form-control form-control-lg bg-dark text-white" formControlName=email>
+              <small *ngIf="data.get('email').touched && data.get('email').errors">Enter valid email</small>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input  type="password" class="form-control form-control-lg bg-dark text-white" formControlName=password>
+              <small *ngIf="data.get('password').touched && data.get('password').errors">Password required(minimum 6 characters)</small><br>
+                  <span>{{msg}}</span>
+            </div>
+            <button type="submit" class="btn btn-primary">signup</button>
+          </form>
+          <div>
+            <p class="mb-0">Already have an account? <a routerLink='/' class=" fw-bold text-decoration-none">Login</a>
+            </p>
+          </div>
+    </div>
+    
+</div> -->
+
+
+<div class="simple-login-container">
+  <h2>Signup Form</h2>
+  <form [formGroup]="data" (ngSubmit)="signupfunction(data)">
+
+    <div class="row">
+      <div class="col-md-12 form-group pb-2">
+        <label for="exampleInputEmail1" class="form-label">Name</label>
+        <input type="text"class="form-control" formControlName="name">
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-md-12 form-group pb-2">
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+        <input type="text" class="form-control " formControlName=email>
+        <small *ngIf="data.get('email').touched && data.get('email').errors">Enter valid email</small>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-md-12 form-group pb-2">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input  type="password" class="form-control " formControlName=password>
+              <small *ngIf="data.get('password').touched && data.get('password').errors">Password required(minimum 6 characters)</small><br>
+                  <span>{{msg}}</span>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-md-12 form-group">
+        <button type="submit" class="btn btn-primary">signup</button>
+      </div>
+  </div>
+  
+
+
+  </form>
+  <div class="row">
+    <div>
+      <p>Alredy Have an account <span ><a class="text-dark" routerLink="/">Login</a></span></p>
+    </div>
+  </div>
+  
+</div>

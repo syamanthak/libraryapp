@@ -1,0 +1,55 @@
+
+
+
+<section id="team" class="pb-5">
+    <div class="container">
+        <h2 class="section-title h1">Library Books</h2>
+        <div class="row">
+
+
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let item of books">
+                <div class="image-flip" >
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title pt-5">{{item.title}}</h4>
+                                    <p class="card-text">{{item.author}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Summary</h4>
+                                    <div class="overflow-auto">
+                                      <p class="card-text">{{item.summary}}</p>
+                                    </div>
+                                    <ul class="list-inline">
+                                      <li class="list-inline-item" hidden>
+                                        <a class="social-icon text-xs-center " target="_blank" href="">
+                                          <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" hidden>
+                                        <a class="social-icon text-xs-center" target="_blank" href="">
+                                          <i class="fa fa-trash" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            
+            <!-- ./Team member -->
+
+        </div>
+    </div>
+</section>
